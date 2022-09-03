@@ -1,0 +1,13 @@
+[ {
+  "realm" : "master",
+  "users" : [ {
+    "username" : "fakhrilak",
+    "enabled" : true,
+    "credentials" : [ {
+      "type" : "password",
+      "secretData" : "{\"value\":\"PftFr33A3YphuuY+g5u4ayBbXTj9MF9HIFMurWqNqHgGHmOZHH9DWxoJiyUMqsRmJI0lD5HBom7xyr4bkkjbAA==\",\"salt\":\"xO3uCx/1/1c47chALfFZzg==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":100000,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "realmRoles" : [ "admin" ]
+  } ]
+} ]

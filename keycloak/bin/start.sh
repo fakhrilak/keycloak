@@ -1,0 +1,12 @@
+export DB_VENDOR=MYSQL
+export DB_ADDR=192.168.100.38:3306
+export DB_DATABASE=KafiRaya
+export DB_USER=root
+export DB_SCHEMA=public
+export DB_PASSWORD=P@ssw0rd*1
+#export KEYCLOAK_USER: ${KEYCLOAK_ADMIN_LOGIN}
+export KEYCLOAK_USER=test
+#KEYCLOAK_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
+export KEYCLOAK_PASSWORD=test123
+
+sh ./standalone.sh

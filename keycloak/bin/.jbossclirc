@@ -1,0 +1,15 @@
+# .jbossclirc
+#
+# WildFly (JBoss) CLI will execute commands from this file before
+# the command line session (interactive or not) will start.
+#
+# If script argument --properties was used when launching the CLI,
+# the commands from this file will be executed after the system
+# properties have been set.
+#
+# This file would typically be used to setup the CLI session
+# variables (which is optional at the moment), e.g.
+#
+# set myvar=/subsystem=datasources/data-source=ExampleDS
+set keycloak_tls_keystore_password=7V3stlgMEXg5UUpEb+/ltKu2PnrmZAfwo5gMXHZlzdg=
+set keycloak_tls_keystore_file=/opt/jboss/keycloak/standalone/configuration/keystores/https-keystore.jks

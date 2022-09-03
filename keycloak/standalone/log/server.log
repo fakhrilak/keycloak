@@ -1,0 +1,535 @@
+2022-09-01 05:42:25,951 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 1.11.0.Final
+2022-09-01 05:42:26,174 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.12.Final
+2022-09-01 05:42:26,191 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2022-09-01 05:42:26,721 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) starting
+2022-09-01 05:42:26,777 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	com.ibm.jsse2.overrideDefaultTLS = true
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss/keycloak/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el8_4.x86_64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.12+7-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Red Hat, Inc.
+	java.vendor.url = https://www.redhat.com/
+	java.vendor.url.bug = https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%208&component=java-11-openjdk
+	java.vendor.version = 18.9
+	java.version = 11.0.12
+	java.version.date = 2021-07-20
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Red Hat, Inc.
+	java.vm.version = 11.0.12+7-LTS
+	jboss.home.dir = /opt/jboss/keycloak
+	jboss.host.name = f05db1d6f7ed
+	jboss.modules.dir = /opt/jboss/keycloak/modules
+	jboss.modules.system.pkgs = com.sun.java.swing
+	jboss.node.name = f05db1d6f7ed
+	jboss.qualified.host.name = f05db1d6f7ed
+	jboss.server.base.dir = /opt/jboss/keycloak/standalone
+	jboss.server.config.dir = /opt/jboss/keycloak/standalone/configuration
+	jboss.server.content.dir = /opt/jboss/keycloak/standalone/data/content
+	jboss.server.data.dir = /opt/jboss/keycloak/standalone/data
+	jboss.server.deploy.dir = /opt/jboss/keycloak/standalone/data/content
+	jboss.server.log.dir = /opt/jboss/keycloak/standalone/log
+	jboss.server.name = f05db1d6f7ed
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss/keycloak/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss/keycloak/bin/jboss-cli-logging.properties
+	module.path = /opt/jboss/keycloak/modules
+	org.jboss.boot.log.file = /opt/jboss/keycloak/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-1160.66.1.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el8_4.x86_64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss/keycloak/jboss-modules.jar -mp /opt/jboss/keycloak/modules org.jboss.as.cli --file=/opt/jboss/tools/cli/databases/postgres/standalone-configuration.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /opt/jboss/keycloak
+	user.home = /opt/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = GMT
+2022-09-01 05:42:26,783 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Djboss.modules.system.pkgs=com.sun.java.swing -Dcom.ibm.jsse2.overrideDefaultTLS=true -Dlogging.configuration=file:/opt/jboss/keycloak/bin/jboss-cli-logging.properties 
+2022-09-01 05:42:27,152 INFO  [org.jboss.vfs] (MSC service thread 1-4) VFS000002: Failed to clean existing content for temp file provider of type temp. Enable DEBUG level log to find what caused this
+2022-09-01 05:42:28,766 INFO  [org.wildfly.security] (ServerService Thread Pool -- 20) ELY00001: WildFly Elytron version 1.15.3.Final
+2022-09-01 05:42:29,443 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 11) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+2022-09-01 05:42:30,183 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-09-01 05:42:30,490 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-09-01 05:42:30,798 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/opt/jboss/keycloak/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-09-01 05:42:30,820 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /opt/jboss/keycloak/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-09-01 05:42:30,886 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: Keycloak cumulative patch ID is: base, one-off patches include: none
+2022-09-01 05:42:30,907 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /opt/jboss/keycloak/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2022-09-01 05:42:31,281 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-09-01 05:42:31,285 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) started in 5310ms - Started 59 of 82 services (32 services are lazy, passive or on-demand)
+2022-09-01 05:42:32,391 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) stopped in 40ms
+2022-09-01 05:42:35,438 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 1.11.0.Final
+2022-09-01 05:42:35,560 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.12.Final
+2022-09-01 05:42:35,576 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2022-09-01 05:42:35,793 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) starting
+2022-09-01 05:42:35,797 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	com.ibm.jsse2.overrideDefaultTLS = true
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss/keycloak/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el8_4.x86_64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.12+7-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Red Hat, Inc.
+	java.vendor.url = https://www.redhat.com/
+	java.vendor.url.bug = https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%208&component=java-11-openjdk
+	java.vendor.version = 18.9
+	java.version = 11.0.12
+	java.version.date = 2021-07-20
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Red Hat, Inc.
+	java.vm.version = 11.0.12+7-LTS
+	jboss.home.dir = /opt/jboss/keycloak
+	jboss.host.name = f05db1d6f7ed
+	jboss.modules.dir = /opt/jboss/keycloak/modules
+	jboss.modules.system.pkgs = com.sun.java.swing
+	jboss.node.name = f05db1d6f7ed
+	jboss.qualified.host.name = f05db1d6f7ed
+	jboss.server.base.dir = /opt/jboss/keycloak/standalone
+	jboss.server.config.dir = /opt/jboss/keycloak/standalone/configuration
+	jboss.server.content.dir = /opt/jboss/keycloak/standalone/data/content
+	jboss.server.data.dir = /opt/jboss/keycloak/standalone/data
+	jboss.server.deploy.dir = /opt/jboss/keycloak/standalone/data/content
+	jboss.server.log.dir = /opt/jboss/keycloak/standalone/log
+	jboss.server.name = f05db1d6f7ed
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss/keycloak/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss/keycloak/bin/jboss-cli-logging.properties
+	module.path = /opt/jboss/keycloak/modules
+	org.jboss.boot.log.file = /opt/jboss/keycloak/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-1160.66.1.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el8_4.x86_64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss/keycloak/jboss-modules.jar -mp /opt/jboss/keycloak/modules org.jboss.as.cli --file=/opt/jboss/tools/cli/databases/postgres/standalone-ha-configuration.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /opt/jboss/keycloak
+	user.home = /opt/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = GMT
+2022-09-01 05:42:35,799 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Djboss.modules.system.pkgs=com.sun.java.swing -Dcom.ibm.jsse2.overrideDefaultTLS=true -Dlogging.configuration=file:/opt/jboss/keycloak/bin/jboss-cli-logging.properties 
+2022-09-01 05:42:35,933 INFO  [org.jboss.vfs] (MSC service thread 1-4) VFS000002: Failed to clean existing content for temp file provider of type temp. Enable DEBUG level log to find what caused this
+2022-09-01 05:42:37,328 INFO  [org.wildfly.security] (ServerService Thread Pool -- 22) ELY00001: WildFly Elytron version 1.15.3.Final
+2022-09-01 05:42:38,003 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 25) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+2022-09-01 05:42:38,755 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-09-01 05:42:38,976 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-09-01 05:42:39,180 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY00023: KeyStore file '/opt/jboss/keycloak/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-09-01 05:42:39,192 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /opt/jboss/keycloak/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-09-01 05:42:39,293 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: Keycloak cumulative patch ID is: base, one-off patches include: none
+2022-09-01 05:42:39,335 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore /opt/jboss/keycloak/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2022-09-01 05:42:39,561 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-09-01 05:42:39,563 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) started in 4109ms - Started 59 of 89 services (39 services are lazy, passive or on-demand)
+2022-09-01 05:42:39,980 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) stopped in 37ms
+2022-09-01 05:42:44,445 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 1.11.0.Final
+2022-09-01 05:42:44,565 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.12.Final
+2022-09-01 05:42:44,580 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2022-09-01 05:42:44,788 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) starting
+2022-09-01 05:42:44,792 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	com.ibm.jsse2.overrideDefaultTLS = true
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss/keycloak/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el8_4.x86_64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.12+7-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Red Hat, Inc.
+	java.vendor.url = https://www.redhat.com/
+	java.vendor.url.bug = https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%208&component=java-11-openjdk
+	java.vendor.version = 18.9
+	java.version = 11.0.12
+	java.version.date = 2021-07-20
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Red Hat, Inc.
+	java.vm.version = 11.0.12+7-LTS
+	jboss.home.dir = /opt/jboss/keycloak
+	jboss.host.name = f05db1d6f7ed
+	jboss.modules.dir = /opt/jboss/keycloak/modules
+	jboss.modules.system.pkgs = com.sun.java.swing
+	jboss.node.name = f05db1d6f7ed
+	jboss.qualified.host.name = f05db1d6f7ed
+	jboss.server.base.dir = /opt/jboss/keycloak/standalone
+	jboss.server.config.dir = /opt/jboss/keycloak/standalone/configuration
+	jboss.server.content.dir = /opt/jboss/keycloak/standalone/data/content
+	jboss.server.data.dir = /opt/jboss/keycloak/standalone/data
+	jboss.server.deploy.dir = /opt/jboss/keycloak/standalone/data/content
+	jboss.server.log.dir = /opt/jboss/keycloak/standalone/log
+	jboss.server.name = f05db1d6f7ed
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss/keycloak/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss/keycloak/bin/jboss-cli-logging.properties
+	module.path = /opt/jboss/keycloak/modules
+	org.jboss.boot.log.file = /opt/jboss/keycloak/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-1160.66.1.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el8_4.x86_64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss/keycloak/jboss-modules.jar -mp /opt/jboss/keycloak/modules org.jboss.as.cli --file=/opt/jboss/tools/cli/x509-keystore.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /
+	user.home = /opt/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = GMT
+2022-09-01 05:42:44,799 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Djboss.modules.system.pkgs=com.sun.java.swing -Dcom.ibm.jsse2.overrideDefaultTLS=true -Dlogging.configuration=file:/opt/jboss/keycloak/bin/jboss-cli-logging.properties 
+2022-09-01 05:42:44,938 INFO  [org.jboss.vfs] (MSC service thread 1-2) VFS000002: Failed to clean existing content for temp file provider of type temp. Enable DEBUG level log to find what caused this
+2022-09-01 05:42:46,210 INFO  [org.wildfly.security] (ServerService Thread Pool -- 20) ELY00001: WildFly Elytron version 1.15.3.Final
+2022-09-01 05:42:46,821 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 11) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+2022-09-01 05:42:47,624 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-09-01 05:42:47,869 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-09-01 05:42:48,142 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file '/opt/jboss/keycloak/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-09-01 05:42:48,158 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /opt/jboss/keycloak/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-09-01 05:42:48,249 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: Keycloak cumulative patch ID is: base, one-off patches include: none
+2022-09-01 05:42:48,333 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /opt/jboss/keycloak/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2022-09-01 05:42:48,791 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-09-01 05:42:48,800 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) started in 4339ms - Started 59 of 82 services (32 services are lazy, passive or on-demand)
+2022-09-01 05:42:49,272 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00024: Certificate [keycloak-https-key] in KeyStore is not valid: java.security.cert.CertificateExpiredException: NotAfter: Sat Aug 13 06:02:04 GMT 2022
+	at java.base/sun.security.x509.CertificateValidity.valid(CertificateValidity.java:277)
+	at java.base/sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:675)
+	at java.base/sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:648)
+	at org.wildfly.extension.elytron@15.0.1.Final//org.wildfly.extension.elytron.KeyStoreService.checkCertificatesValidity(KeyStoreService.java:230)
+	at org.wildfly.extension.elytron@15.0.1.Final//org.wildfly.extension.elytron.KeyStoreService.start(KeyStoreService.java:192)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-09-01 05:42:49,642 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) stopped in 53ms
+2022-09-01 05:42:52,364 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 1.11.0.Final
+2022-09-01 05:42:52,482 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.12.Final
+2022-09-01 05:42:52,511 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final
+2022-09-01 05:42:52,681 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) starting
+2022-09-01 05:42:52,685 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	com.ibm.jsse2.overrideDefaultTLS = true
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss/keycloak/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el8_4.x86_64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.12+7-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Red Hat, Inc.
+	java.vendor.url = https://www.redhat.com/
+	java.vendor.url.bug = https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%208&component=java-11-openjdk
+	java.vendor.version = 18.9
+	java.version = 11.0.12
+	java.version.date = 2021-07-20
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Red Hat, Inc.
+	java.vm.version = 11.0.12+7-LTS
+	jboss.home.dir = /opt/jboss/keycloak
+	jboss.host.name = f05db1d6f7ed
+	jboss.modules.dir = /opt/jboss/keycloak/modules
+	jboss.modules.system.pkgs = com.sun.java.swing
+	jboss.node.name = f05db1d6f7ed
+	jboss.qualified.host.name = f05db1d6f7ed
+	jboss.server.base.dir = /opt/jboss/keycloak/standalone
+	jboss.server.config.dir = /opt/jboss/keycloak/standalone/configuration
+	jboss.server.content.dir = /opt/jboss/keycloak/standalone/data/content
+	jboss.server.data.dir = /opt/jboss/keycloak/standalone/data
+	jboss.server.deploy.dir = /opt/jboss/keycloak/standalone/data/content
+	jboss.server.log.dir = /opt/jboss/keycloak/standalone/log
+	jboss.server.name = f05db1d6f7ed
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss/keycloak/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss/keycloak/bin/jboss-cli-logging.properties
+	module.path = /opt/jboss/keycloak/modules
+	org.jboss.boot.log.file = /opt/jboss/keycloak/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-1160.66.1.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el8_4.x86_64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss/keycloak/jboss-modules.jar -mp /opt/jboss/keycloak/modules org.jboss.as.cli --file=/opt/jboss/tools/cli/x509-keystore.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /
+	user.home = /opt/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = GMT
+2022-09-01 05:42:52,693 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Djboss.modules.system.pkgs=com.sun.java.swing -Dcom.ibm.jsse2.overrideDefaultTLS=true -Dlogging.configuration=file:/opt/jboss/keycloak/bin/jboss-cli-logging.properties 
+2022-09-01 05:42:52,901 INFO  [org.jboss.vfs] (MSC service thread 1-4) VFS000002: Failed to clean existing content for temp file provider of type temp. Enable DEBUG level log to find what caused this
+2022-09-01 05:42:54,845 INFO  [org.wildfly.security] (ServerService Thread Pool -- 22) ELY00001: WildFly Elytron version 1.15.3.Final
+2022-09-01 05:42:55,708 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 13) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+2022-09-01 05:42:56,620 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-09-01 05:42:56,948 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-09-01 05:42:57,322 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY00023: KeyStore file '/opt/jboss/keycloak/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-09-01 05:42:57,337 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY01084: KeyStore /opt/jboss/keycloak/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-09-01 05:42:57,392 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: Keycloak cumulative patch ID is: base, one-off patches include: none
+2022-09-01 05:42:57,443 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore /opt/jboss/keycloak/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2022-09-01 05:42:57,687 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-09-01 05:42:57,691 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) started in 5311ms - Started 59 of 89 services (39 services are lazy, passive or on-demand)
+2022-09-01 05:42:58,286 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY00024: Certificate [keycloak-https-key] in KeyStore is not valid: java.security.cert.CertificateExpiredException: NotAfter: Sat Aug 13 06:02:04 GMT 2022
+	at java.base/sun.security.x509.CertificateValidity.valid(CertificateValidity.java:277)
+	at java.base/sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:675)
+	at java.base/sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:648)
+	at org.wildfly.extension.elytron@15.0.1.Final//org.wildfly.extension.elytron.KeyStoreService.checkCertificatesValidity(KeyStoreService.java:230)
+	at org.wildfly.extension.elytron@15.0.1.Final//org.wildfly.extension.elytron.KeyStoreService.start(KeyStoreService.java:192)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-09-01 05:42:58,842 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) stopped in 67ms
+2022-09-01 05:43:01,177 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final
+2022-09-01 05:43:02,046 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final
+2022-09-01 05:43:02,069 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2022-09-01 05:43:02,244 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Keycloak 15.0.0 (WildFly Core 15.0.1.Final) starting
+2022-09-01 05:43:02,249 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss/keycloak/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el8_4.x86_64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.12+7-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Red Hat, Inc.
+	java.vendor.url = https://www.redhat.com/
+	java.vendor.url.bug = https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%208&component=java-11-openjdk
+	java.vendor.version = 18.9
+	java.version = 11.0.12
+	java.version.date = 2021-07-20
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Red Hat, Inc.
+	java.vm.version = 11.0.12+7-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.bind.address.private = 172.20.0.3
+	jboss.home.dir = /opt/jboss/keycloak
+	jboss.host.name = f05db1d6f7ed
+	jboss.modules.dir = /opt/jboss/keycloak/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = f05db1d6f7ed
+	jboss.qualified.host.name = f05db1d6f7ed
+	jboss.server.base.dir = /opt/jboss/keycloak/standalone
+	jboss.server.config.dir = /opt/jboss/keycloak/standalone/configuration
+	jboss.server.data.dir = /opt/jboss/keycloak/standalone/data
+	jboss.server.deploy.dir = /opt/jboss/keycloak/standalone/data/content
+	jboss.server.log.dir = /opt/jboss/keycloak/standalone/log
+	jboss.server.name = f05db1d6f7ed
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss/keycloak/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss/keycloak/standalone/configuration/logging.properties
+	module.path = /opt/jboss/keycloak/modules
+	org.jboss.boot.log.file = /opt/jboss/keycloak/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-1160.66.1.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0.el8_4.x86_64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss/keycloak/jboss-modules.jar -mp /opt/jboss/keycloak/modules org.jboss.as.standalone -Djboss.home.dir=/opt/jboss/keycloak -Djboss.server.base.dir=/opt/jboss/keycloak/standalone -Djboss.bind.address=172.20.0.3 -Djboss.bind.address.private=172.20.0.3 -c=standalone-ha.xml -b 0.0.0.0
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /
+	user.home = /opt/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = GMT
+2022-09-01 05:43:02,253 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/opt/jboss/keycloak/standalone/log/server.log -Dlogging.configuration=file:/opt/jboss/keycloak/standalone/configuration/logging.properties 
+2022-09-01 05:43:02,407 INFO  [org.jboss.vfs] (MSC service thread 1-2) VFS000002: Failed to clean existing content for temp file provider of type temp. Enable DEBUG level log to find what caused this
+2022-09-01 05:43:03,702 INFO  [org.wildfly.security] (ServerService Thread Pool -- 22) ELY00001: WildFly Elytron version 1.15.3.Final
+2022-09-01 05:43:04,345 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 14) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+2022-09-01 05:43:05,021 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-09-01 05:43:05,472 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2022-09-01 05:43:05,494 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.8.4.Final
+2022-09-01 05:43:05,509 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.8.4.Final
+2022-09-01 05:43:05,626 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 39) WFLYCLINF0001: Activating Infinispan subsystem.
+2022-09-01 05:43:05,641 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2022-09-01 05:43:05,645 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2022-09-01 05:43:05,649 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 55) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2022-09-01 05:43:05,675 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 43) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.2.11
+2022-09-01 05:43:05,731 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.20.Final
+2022-09-01 05:43:05,709 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2022-09-01 05:43:05,711 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 40) WFLYIO001: Worker 'default' has auto-configured to 4 IO threads with 32 max task threads based on your 2 available processors
+2022-09-01 05:43:05,772 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.2.5.Final starting
+2022-09-01 05:43:05,774 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2022-09-01 05:43:05,833 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 38) WFLYHEALTH0001: Activating Base Health Subsystem
+2022-09-01 05:43:05,848 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 48) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2022-09-01 05:43:05,854 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 41) WFLYRS0016: RESTEasy version 3.15.1.Final
+2022-09-01 05:43:05,888 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.2)
+2022-09-01 05:43:06,102 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 56) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+2022-09-01 05:43:06,141 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.4.27.Final)
+2022-09-01 05:43:06,269 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2022-09-01 05:43:06,308 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = postgresql
+2022-09-01 05:43:06,315 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2022-09-01 05:43:06,325 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2022-09-01 05:43:06,458 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 56) WFLYUT0014: Creating file handler for path '/opt/jboss/keycloak/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2022-09-01 05:43:06,580 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 8 (per class), which is derived from the number of CPUs on this host.
+2022-09-01 05:43:06,581 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 32 (per class), which is derived from thread worker pool sizing.
+2022-09-01 05:43:06,653 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file '/opt/jboss/keycloak/standalone/configuration/application.keystore' does not exist. Used blank.
+2022-09-01 05:43:06,759 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore /opt/jboss/keycloak/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-09-01 05:43:06,818 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2022-09-01 05:43:07,074 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) Queuing requests.
+2022-09-01 05:43:07,075 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2022-09-01 05:43:07,332 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:8080
+2022-09-01 05:43:07,335 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow AJP listener ajp listening on 0.0.0.0:8009
+2022-09-01 05:43:07,361 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY00024: Certificate [keycloak-https-key] in KeyStore is not valid: java.security.cert.CertificateExpiredException: NotAfter: Sat Aug 13 06:02:04 GMT 2022
+	at java.base/sun.security.x509.CertificateValidity.valid(CertificateValidity.java:277)
+	at java.base/sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:675)
+	at java.base/sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:648)
+	at org.wildfly.extension.elytron@15.0.1.Final//org.wildfly.extension.elytron.KeyStoreService.checkCertificatesValidity(KeyStoreService.java:230)
+	at org.wildfly.extension.elytron@15.0.1.Final//org.wildfly.extension.elytron.KeyStoreService.start(KeyStoreService.java:192)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.12.Final//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1363)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-09-01 05:43:07,393 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 58) MODCLUSTER000001: Initializing mod_cluster version 1.4.3.Final
+2022-09-01 05:43:07,419 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: Keycloak cumulative patch ID is: base, one-off patches include: none
